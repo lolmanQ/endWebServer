@@ -1,0 +1,107 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+body.normalLayout{
+	min-height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"nav"
+	"main"
+	"footer";
+	grid-template-rows: 100px 3.25rem auto 150px;
+	header{
+		grid-area: header;
+		display: flex;
+		align-items: center;
+		h1{
+			font-size: 3rem;
+			text-align: center;
+			margin: auto;
+		}
+	}
+	nav{
+		grid-area: nav;
+		width: 100%;
+		display: flex;
+		section.navbar-menu{
+			display: flex;
+			justify-content: space-evenly;
+		}
+		section.userWindow{
+			display: flex;
+		}
+	}
+	main{
+		grid-area: main;
+		width: 100%;
+	}
+
+	footer{
+		grid-area: footer;
+	}
+}
+
+.loginPage{
+	main{
+		grid-area: main;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		.loginWindow{
+			display: flex;
+			flex-direction: column;
+			padding: 5rem;
+			form{
+				display: flex;
+				flex-direction: column;
+				input{
+					margin-bottom: 1rem;
+				}
+			}
+			a{
+				text-align: center;
+			}
+		}
+	}
+}
+
+.createAccountPage{
+	main{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		.createUserWindow{
+			display: flex;
+			flex-direction: column;
+			padding: 5rem;
+			form{
+				display: flex;
+				flex-direction: column;
+				input{
+					margin-bottom: 1rem;
+				}
+			}
+			a{
+				text-align: center;
+			}
+		}
+	}
+}
+
+.productImg{
+	width: 15rem;
+	height: auto;
+}
+
+.adminPage{
+	main{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
